@@ -10,7 +10,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -32,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code solution](https://github.com/slickLink/faq-accordion-card-main)
-- Live Site URL: [Live site](https://faq-accordion-card-main-solution.netlify.app/)
+- Solution URL: [Code solution](https://github.com/slickLink/social-proof-section-master)
+- Live Site URL: [Live site](https://social-proof-section-sol.netlify.app/)
 
 ### Built with
 
@@ -43,69 +42,9 @@ Users should be able to:
 - Mobile-first workflow
 
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### What I learned
-
-- overflow css property:
-The child nodes of any parent element with a overflow property cannot overide its behavior.
-```html
-<div class="container">
-  <img src="/images/example.png" alt="example img">
-</div>
-```
-```scss
-.container {
-  overflow: hidden;
-  img {
-    width: 100%
-    margin-left: -20em; 
-  }
-}
-// image will be cut off at the left border of the div
-```
-
-- :target css selector:
-URLs with an # followed by an anchor name link a certain element within the document. the element being linked to is the :target element.
-
-Example from this project
-```html
-<div id="question1" class="faq-content-item">
-  <a href="#question1" class="question-wrapper">
-      <p class="faq-content-question">How many team members can I invite?</p>
-      <img class="arrow" alt="up/down arrow toggle">
-  </a>
-  <p class="faq-content-answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
-      team members for the Premium plan.</p>
-</div> <!--FAQ question and answer item-->
-```
-The <a> tag links the outer div with id "question1". I did this so could select the elements inside .faq-content-item with css and create a toggle without using js :)
-
-*Note: not entire code only important parts for sample*
-```scss
-.faq-content-answer { // FAQ answer <p>
-  display: none;
-  margin: 0em 3em 1em 0;
-  color: $text_light;
-}
-
-// css only toggle using :target
-:target {
-    .faq-content-question { // clicked question
-        color: black;
-        font-weight: 700;
-    }
-    .arrow {
-        transform: scaleY(-1);
-    }
-    .faq-content-answer {
-        display: block;
-    }
-}
-```
 ### Continued development
 
-- keep solidifying my knowledge in css and html 
+- keep solidifying my knowledge in html, scss and flexbox
 - eager to learn Grid
 - Develop a sense of when to use Grid and/or Flexbox
 
